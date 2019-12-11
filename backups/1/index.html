@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Course Project</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body onload="updateButton();">
+		<nav>
+			<h class="navbar-title">Contact Management</h>
+			<div class="button-container">
+				<button id="btnMenu" class="button-top"><i class="fas fa-bars"></i> Index</button>
+				<button id="btnNew" class="button-top"><i class="fas fa-plus-square"></i> New</button>
+			</div>
+		</nav>
+		<main>
+			<h1>Contact List</h1>
+			<hr>
+			<table id="contactTable" style="width:100%">
+					<tr class="header-table">
+					  <th align="left">#</th>
+					  <th align="left">Name</th>
+					  <th align="left">Email</th>
+					  <th align="left">Phone</th>
+					</tr>
+				</table> 
+		</main>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+	<script src="script.js"></script>
+</html>

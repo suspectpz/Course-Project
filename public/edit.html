@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Edit Contact</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body onload="btnUpdate();">
+		<nav>
+			<h class="navbar-title">Contact Management</h>
+			<div class="button-container">
+				<button id="btnMenu" class="button-top"><i class="fas fa-bars"></i> Index</button>
+				<button id="btnNew" class="button-top"><i class="fas fa-plus-square"></i> New</button>
+			</div>
+		</nav>	
+		<div class="new-contact-container">
+			<div class="new-contact-container-header">
+				<h>New Contact</h>
+			</div>
+			<div class="new-contact-container-body">
+					<label>Name:</label>
+					<input id="inputName">
+					<label>Email:</label>
+					<input id="inputEmail">
+					<label>Phone:</label>
+					<input id="inputPhone">
+					<button id="btnSubmitEdit" class="createContactButton"><i class="fab fa-telegram-plane"></i> Submit</button>
+			</div>
+		</div>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</html>
